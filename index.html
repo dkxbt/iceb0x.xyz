@@ -290,7 +290,7 @@
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
             max-width: 1400px;
             margin: 0 auto;
@@ -487,6 +487,10 @@
             font-size: 0.875rem;
         }
 
+        @media (max-width: 1024px) {
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
         @media (max-width: 768px) {
             nav { padding: 1.25rem 5%; }
             .logo { font-size: 1.25rem; }
@@ -680,7 +684,7 @@
             <div class="contact-grid">
                 <div class="contact-card scroll-reveal">
                     <h3>Email</h3>
-                    <a href="mailto:dk@iceb0x.xyz">dk@iceb0x.xyz</a>
+                    <a href="/cdn-cgi/l/email-protection#8ce8e7cce5efe9eebcf4a2f4f5f6"><span class="__cf_email__" data-cfemail="c7a3ac87aea4a2a5f7bfe9bfbebd">[email&#160;protected]</span></a>
                 </div>
                 
                 <div class="contact-card scroll-reveal">
@@ -700,7 +704,7 @@
         <p>&copy; 2026 iceb0x. All rights reserved.</p>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Scroll reveal that works reliably
         (function() {
             const scrollElements = document.querySelectorAll('.scroll-reveal');
@@ -737,7 +741,7 @@
                 handleNav();
             });
             
-            // Run immediately on load
+            //             // Run immediately on load
             handleScrollAnimation();
             
             // Run after a short delay to ensure DOM is ready
